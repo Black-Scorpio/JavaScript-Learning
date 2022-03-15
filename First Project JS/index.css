@@ -1,0 +1,121 @@
+main {
+  position: relative;
+  width: 850px;
+  height: 850px;
+  left: 605px;
+  top: 50px;
+
+  background: #1F2937;
+  text-align: center;
+}
+
+main header {
+  /* Heading */
+  position: absolute;
+  width: 850px;
+  height: 38px;
+  left: 51px;
+  top: 53px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 38px;
+  /* identical to box height, or 173% */
+  text-align: center;
+  letter-spacing: -0.05em;
+  color: #FFFFFF;
+}
+
+
+
+main header {
+  /* background */
+  position: absolute;
+  width: 850px;
+  height: 260px;
+  left: 0px;
+  top: 0px;
+  background: linear-gradient(246.26deg, #585DFE 0%, #FB3796 100%);
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 38px;
+  /* identical to box height, or 173% */
+  text-align: center;
+  letter-spacing: -0.05em;
+  color: #FFFFFF;
+}
+
+main header h2 {
+  /* number to convert */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 97.5723px;
+  line-height: 24px;
+  /* or 25% */
+  text-align: center;
+  color: #FFFFFF;
+}
+
+
+main > .length{
+  position: absolute;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 38px;
+  width: 850px;
+  height: 38px;
+  top: 300px;
+  /* identical to box height, or 173% */
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+
+main .volume{
+  position: absolute;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 38px;
+  width: 850px;
+  height: 38px;
+  top: 500px;
+  /* identical to box height, or 173% */
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+
+main .mass{
+  position: absolute;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 38px;
+  width: 850px;
+  height: 38px;
+  top: 700px;
+  /* identical to box height, or 173% */
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+
+
+main div p:last-child{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+
+color: #D2D2D2;
+}
