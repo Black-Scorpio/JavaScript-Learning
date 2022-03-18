@@ -6,13 +6,30 @@ let cards;
 let sum;
 let hasBlackJack;
 let isAlive;
+let playerName;
+let chips;
+
+let player = {
+  name: "Scorpio",
+  chips: 145
+
+}
+
+let playerEl = document.getElementById("player-el");
+playerEl.textContent = player.name.concat(": $",player.chips)
 
 
 //random integer function
-function getRndInteger(min, max) {
+function getRndInteger() {
       //return floored int
-  var randomCard = Math.floor(Math.random() * (max - min) ) + min;
-  return randomCard;
+  var randomNumber = Math.floor(Math.random() * 13 ) + 1;
+  if (randomNumber > 10) {
+       return 10
+   } else if (randomNumber === 1) {
+       return 11
+   } else {
+       return randomNumber
+   }
 }
 
 let messageEl = document.getElementById('message-el');
@@ -22,8 +39,8 @@ let cardsEl = document.querySelector("#cards-el");
 
 
 function startGame(){
-  firstCard = getRndInteger(2,12);
-  secondCard = getRndInteger(2,12);
+  firstCard = getRndInteger();
+  secondCard = getRndInteger();
   cards = [firstCard,secondCard];
   sum = firstCard + secondCard;
   cardsEl.textContent = "Cards: ".concat(cards);
@@ -37,7 +54,7 @@ function startGame(){
 function newCard(){
   if(isAlive && hasBlackJack === false)
   {
-    nextCard = getRndInteger(2,12);
+    nextCard = getRndInteger();
     sum += nextCard;
 
     cards.push(nextCard);
