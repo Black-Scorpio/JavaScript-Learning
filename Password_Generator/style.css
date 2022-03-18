@@ -1,0 +1,127 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: auto;
+    height: auto;
+
+    background: #1C1C1C;
+}
+
+main{
+position: absolute;
+width: 800px;
+height: 600px;
+left: 600px;
+top: 100px;
+
+background: #1F2937;
+}
+
+main > h1{
+  position: absolute;
+width: 354px;
+height: 80px;
+left: 52px;
+top: 118px;
+
+font-family: 'Karla';
+font-style: normal;
+font-weight: 800;
+font-size: 40px;
+line-height: 40px;
+/* or 100% */
+
+letter-spacing: -0.025em;
+
+
+color: #FFFFFF;
+}
+.randomPassText{
+  color: #6EE7B7;
+}
+
+main > h2{
+
+position: absolute;
+width: 372px;
+height: 28px;
+left: 52px;
+top: 208px;
+
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+/* identical to box height, or 140% */
+
+
+/* Medium grey */
+
+color: #D5D4D8;
+}
+
+#generatePass{
+/* layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 9px 17px 9px 15px;
+
+position: absolute;
+width: 223px;
+height: 42px;
+left: 52px;
+top: 287px;
+
+background: #10B981;
+/* shadow/sm */
+
+box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+border-radius: 6px;
+/* Text */
+
+/* text-base/leading-6/font-medium */
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+
+/* white */
+
+color: #FFFFFF;
+
+
+}
+
+.passwordList{
+  /* Text */
+  display: grid;
+  grid-template-areas: "a a";
+position: absolute;
+width: 180px;
+height: 32px;
+left: 67px;
+top: 403px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 32px;
+/* identical to box height, or 200% */
+
+text-align: center;
+color: #55F991;
+}
+
+.passwordList > p{
+  border: solid;
+  margin: 10px;
+}
