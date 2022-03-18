@@ -9,6 +9,7 @@ let isAlive;
 let playerName;
 let chips;
 
+//player object
 let player = {
   name: "Scorpio",
   chips: 145
