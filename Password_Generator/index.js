@@ -1,8 +1,15 @@
-// let passwordOne = document.getElementById('passwordOne')
-// let passwordTwo = document.getElementById('passwordTwo')
-// let passwordThree = document.getElementById('passwordThree')
-// let passwordFour = document.getElementById('passwordFour')
+let passwordOne = document.getElementById('passwordOne')
+let passwordTwo = document.getElementById('passwordTwo')
+let passwordThree = document.getElementById('passwordThree')
+let passwordFour = document.getElementById('passwordFour')
+let passwordLength = 10;
 
+
+
+function updateTextInput(val) {
+          document.getElementById('textInput').value= "Password Contains: " + val +" characters.";
+          passwordLength = val;
+        }
 
 
 function generateRandomPassword(length){
@@ -16,4 +23,10 @@ function generateRandomPassword(length){
 
 }
 
-console.log(generateRandomPassword(10));
+
+function generatePassword(){
+  passwordOne.textContent = generateRandomPassword(passwordLength);
+  passwordTwo.textContent = generateRandomPassword(passwordLength);
+  passwordThree.textContent = generateRandomPassword(passwordLength);
+  passwordFour.textContent = generateRandomPassword(passwordLength);
+}

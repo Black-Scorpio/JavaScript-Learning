@@ -7,12 +7,19 @@
         <h1>Generate a <br><span class="randomPassText">random password</span></h1>
         <h2>Never use an insecure password again</h2>
         <br>
-        <button type="button" name="button" id="generatePass">⚡ Generate passwords</button>
+        <button type="button" name="button" id="generatePass" onclick="generatePassword()">⚡ Generate passwords</button>
+        <div>
+          <input type="text" name="" value="Password Contains: 10 characters" class="passwordlengthclass" id="textInput">
+          <input type="range" name="length" id="passwordlength" min="6"  max="14" onchange="updateTextInput(this.value);">
+
+
+        </div>
+
         <div class="passwordList">
-          <p id="passwordOne">PASS</p>
-          <p id="passwordTwo">PASS</p>
-          <p id="passwordThree">pass</p>
-          <p id=PasswordFour>pass</p>
+          <p id="passwordOne"></p>
+          <p id="passwordTwo"></p>
+          <p id="passwordThree"></p>
+          <p id=passwordFour></p>
         </div>
 
       </main>
